@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --destaque-azul: #22D4FD;
+    --titulo-principal: #F6F6F6;
+    --texto-escuro: #000000;
+}
+
+body {
+    background-color: #000000;
+    font-family: "Montserrat", serif;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.menu-itens {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--destaque-azul);
+    font-weight: 600;
+    display: inline-block; /* Garante que o elemento é tratável para transformações */
+    transition: transform 0.5s ease, text-shadow 0.5s ease; /* Suavidade no hover */
+}
+
+.menu-itens:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Efeito de brilho */
+    transform: scale(1.1); /* Aumenta de tamanho */
+}
+
+
+.container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+}
+
+.section-text {
+    width: 50%;
+    
+}
+
+.title-text {
+    font-size: 1.9rem;
+    color: var(--titulo-principal);
+    font-family: "Krona One", sans-serif;
+    line-height: 56px;
+    margin-bottom: 2.3rem;
+}
+
+.destaque-title {
+    color: var(--destaque-azul);
+}
+
+.description-text {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--titulo-principal);
+    line-height: 36px;
+    margin-bottom: 2.3rem;
+}
+
+.title-redes {
+    font-family: "Krona One", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--titulo-principal);
+    text-align: center;
+    margin-bottom: 2.3rem;
+}
+
+.list-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bt-redes {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--titulo-principal);
+    font-weight: 600;
+    gap: 20px;
+    border: 1px solid var(--destaque-azul);
+    border-radius: 8px;
+    padding: 16px 120px;
+    align-items: center;
+    width: 378px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave */
+}
+
+.bt-redes:hover {
+    transform: scale(1.05); /* Aumenta levemente o botão */
+    box-shadow: 0 0 10px var(--destaque-azul); /* Adiciona brilho à borda */
+}
+
+
+.list-redes img {
+    width: 25px;
+    height: 25px;
+}
+
+.bloco-img {
+    width: 50%;
+    padding-left: 80px;
+}
+
+
+
+
+.title-sobre {
+    font-size: 1.6rem;
+    color: var(--titulo-principal);
+    font-family: "Krona One", sans-serif;
+    line-height: 56px;
+    margin-bottom: 2.3rem;
+}
+
+.description-sobre {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--titulo-principal);
+    line-height: 28px;
+    margin-bottom: 2.3rem;
+}
+
+.title-habilidades {
+    font-size: 1.6rem;
+    color: var(--titulo-principal);
+    font-family: "Krona One", sans-serif;
+    line-height: 56px;
+    margin-bottom: 2.3rem;
+}
+
+.list-habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--titulo-principal);
+    padding-left: 20px;
+    margin-bottom: 3rem;
+}
+
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--destaque-azul);
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: var(--texto-escuro);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
