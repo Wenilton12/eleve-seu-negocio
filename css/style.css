@@ -20,7 +20,7 @@ html,body {
     flex-direction: column;
     height: 100%;
     margin: 0;
-
+    overflow-x: hidden;
 }
 
 main {
@@ -257,5 +257,57 @@ main {
     .img {
         width: 300px;
         margin: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .title-redes {
+        font-size: 1.2rem;
+    }
+
+    .title-text {
+        padding-right: 10px;
+    }
+
+    .section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 5px;
+        max-width: 100%;
+    }
+
+    .sobre-mim.section-redes {
+        display: block; /* Ensure it's visible by default */
+    }
+    
+    .sobre-mim.section-redes {
+        display: none;
+    }
+
+    
+    .bt-redes {
+        display: flex;
+        max-width: 69%;
+        justify-content: center;
+    }
+
+    .img {
+        margin-left: 5px;
+    }
+
+    .footer-text {
+        text-align: center;
+        
+    }
+
+    .title-sobre {
+        padding: 0 30px;
+    }
+    .description-sobre {
+        padding: 0 30px;
+    }
+    .section-habilidades {
+        padding: 0 30px;
     }
 }
